@@ -1,6 +1,6 @@
 {
   "name": "ecosystem-buttontree",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": false,
   "dependencies": {
     "@fluentui/react": "^7.150.0",
@@ -30,6 +30,7 @@
       "react-app/jest"
     ]
   },
+  "files": ["/dist"],
   "browserslist": {
     "production": [
       ">0.2%",
