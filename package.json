@@ -1,6 +1,6 @@
 {
   "name": "ecosystem-buttontree",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": false,
   "dependencies": {
     "@fluentui/react": "^7.150.0",
@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile": "tsc --build"
   },
   "eslintConfig": {
     "extends": [
