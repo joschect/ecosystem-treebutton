@@ -2,11 +2,25 @@ import * as React from 'react';
 import {Stack, Button} from '@fluentui/react'
 
 export interface ButtonProps {
+  /**
+   * Text for your fancy button! Really should be able to use different colors though.
+   */
 text: string;
-onClick?: (ev: React.MouseEvent<any>) => void;
+      /**
+       * Click to do things! Rather than not doing things, which is bad
+       */
+      onClick?: (ev: React.MouseEvent<any>) => void;
 }
 
+/**
+ * All of the amazing props that you can pass to your
+ * tall and evergrowing tree of buttons
+ */
 export interface ButtonTreeProps {
+/**
+ * An array of all of your buttons! They'll magically arranged in our favorite shape,
+ * a tree! sure it's not always balanced right but who is counting?
+ */
 buttons: ButtonProps[];
 }
 
