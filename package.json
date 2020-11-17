@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile": "tsc --build"
+    "compile": "tsc --build",
+    "mega": "tsc --outFile 'dist/mega/index.js' --isolatedModules false --module amd"
   },
   "eslintConfig": {
     "extends": [
@@ -30,7 +31,9 @@
       "react-app/jest"
     ]
   },
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
