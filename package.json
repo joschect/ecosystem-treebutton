@@ -1,6 +1,6 @@
 {
   "name": "ecosystem-buttontree",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": false,
   "dependencies": {
     "@fluentui/react": "^7.150.0",
