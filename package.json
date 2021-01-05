@@ -2,6 +2,18 @@
   "name": "ecosystem-buttontree",
   "version": "0.5.0",
   "private": false,
+  "fluentui": {
+    "components": {
+      "Button_Tree": {
+        "docs": [
+          "dist/docs/interfaces/buttontreeprops.md",
+          "dist/docs/interfaces/buttonprops.md"
+        ],
+        "examples": {
+          "Basic_Usage": "dist/App.tsx"
+        }
+      }
+  },
   "dependencies": {
     "@fluentui/react": "^7.150.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -14,6 +26,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "typedoc": "^0.20.12",
+    "typedoc-plugin-markdown": "^3.2.1",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
@@ -23,7 +37,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile": "tsc --build",
-    "mega": "tsc --outFile 'dist/mega/index.js' --isolatedModules false --module amd"
+    "mega": "tsc --outFile 'dist/mega/index.js' --isolatedModules false --module amd",
+    "build-docs": "typedoc src/components/ButtonTree.tsx --plugin typedoc-plugin-markdown --out dist/docs"
   },
   "eslintConfig": {
     "extends": [
