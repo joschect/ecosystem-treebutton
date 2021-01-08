@@ -2,63 +2,55 @@
   "name": "ecosystem-buttontree",
   "version": "0.5.0",
   "private": false,
-  "fluentui": {
-    "components": {
-      "Button_Tree": {
-        "docs": [
-          "dist/docs/interfaces/buttontreeprops.md",
-          "dist/docs/interfaces/buttonprops.md"
-        ],
-        "examples": {
-          "Basic_Usage": "dist/App.tsx"
-        }
-      }
-  },
-  "dependencies": {
-    "@fluentui/react": "^7.150.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
-    "typedoc": "^0.20.12",
-    "typedoc-plugin-markdown": "^3.2.1",
-    "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile": "tsc --build",
-    "mega": "tsc --outFile 'dist/mega/index.js' --isolatedModules false --module amd",
-    "build-docs": "typedoc src/components/ButtonTree.tsx --plugin typedoc-plugin-markdown --out dist/docs"
+    "compile": "tsc --build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "files": [
-    "/dist"
-  ],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+  "fluentui": {
+    "components": {
+      "Button_Tree": {
+        "readme": "dist/components/ButtonTre.md",
+        "examples": [["Basic Example", "dist/App.tsx"]],
+        "demos": [["Basic Demo", "dist/App.tsx"]] 
+      }
+    },
+    "dependencies": {
+      "@fluentui/react": "^7.150.0",
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "@types/jest": "^26.0.15",
+      "@types/node": "^12.0.0",
+      "@types/react": "^16.9.53",
+      "@types/react-dom": "^16.9.8",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-scripts": "4.0.0",
+      "typescript": "^4.0.3",
+      "web-vitals": "^0.2.4"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "files": [
+      "/dist"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
   }
-}
